@@ -31,10 +31,9 @@ ext.runtime.onExtensionClick.addListener(async () => {
     window = await ext.windows.create({
       title: 'Retrohaunt',
       icon: 'icons/icon-128.png',
-      fullscreenable: false,
+      fullscreenable: true,
       vibrancy: false,
-      frame: false,
-      titleBarStyle: 'inset',
+      frame: true,
     })
 
     // Check if persistent permission is granted
