@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Time is vanishing, and Detective Clay is your only hope to uncover the truth!",
   "scripts": {
-    "build": "gulp build-release",
+    "build": "webpack --mode=production --node-env=production",
+    "postbuild": "gulp build-release",
     "start": "gulp",
     "lint": "eslint ."
   },

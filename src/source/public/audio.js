@@ -42,12 +42,15 @@ let musicVolume = 0.5;
 
 const playMusic = (music, volume = null) => {
     musicVolume = volume || musicVolume;
-    if (currentMusic === music && musicPlaying) {
+    
+    if (!music || (currentMusic === music && musicPlaying)) {
         return;
     }
-    if (currentMusic !== null) {
+
+    if (currentMusic) {
         stopMusic();
     }
+
     currentMusic = music;
     music.setVolume(musicVolume);
     if (!muted) {

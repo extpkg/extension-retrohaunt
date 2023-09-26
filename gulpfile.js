@@ -84,7 +84,7 @@ gulp.task('serve', () => {
 })
 
 gulp.task('watch', () => {
-  gulp.watch(srcDir, gulp.series('build-debug'))
+  gulp.watch(srcDir + 'public', gulp.series('build-debug'))
 })
 
 gulp.task('run-debug', gulp.series('build-debug', 'serve', 'watch'))
