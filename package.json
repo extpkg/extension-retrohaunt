@@ -1,0 +1,34 @@
+{
+  "name": "extention-retrohaunt",
+  "version": "0.0.1",
+  "description": "Time is vanishing, and Detective Clay is your only hope to uncover the truth!",
+  "scripts": {
+    "build": "gulp build-release",
+    "start": "gulp",
+    "lint": "eslint ."
+  },
+  "author": "EXT, Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "@extpkg/types-console": "^1.0.1",
+    "@extpkg/types-runtime": "^1.2.1",
+    "@extpkg/types-tabs": "^1.1.0",
+    "@extpkg/types-websessions": "^1.0.1",
+    "@extpkg/types-webviews": "^1.0.2",
+    "@extpkg/types-windows": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-terser": "^2.1.0",
+    "gulp-webserver": "^0.9.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.48.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
