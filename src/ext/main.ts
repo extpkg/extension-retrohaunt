@@ -12,9 +12,10 @@ ext.runtime.onExtensionClick.addListener(async () => {
   try {
 
     // Check if window already exists
-    if (created && window !== null) {
+    if (created && window !== null && webview !== null) {
       await ext.windows.restore(window.id)
       await ext.windows.focus(window.id)
+      await ext.webviews.focus(webview.id)
       return
     }
 
@@ -33,7 +34,10 @@ ext.runtime.onExtensionClick.addListener(async () => {
       icon: 'icons/icon-128.png',
       fullscreenable: true,
       vibrancy: false,
-      frame: true,
+      frame: false,
+      titleBarStyle: 'inset',
+      minWidth: 500,
+      minHeight: 290
     })
 
     // Check if persistent permission is granted
