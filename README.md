@@ -1,13 +1,15 @@
-# Retrohaunt Extension
-![alt text](./src/icons/icon-128.png "logo")
-====
+# Retrohaunt
 
-Someone or something is stealing our time. Today was yesterday and tomorrow is nowhere to be seen. Detective Clay is on the case!
+Time is vanishing, and Detective Clay is your only hope to uncover the truth!
 
-![alt text](./src/icons/icon-banner.png "screenshot")
-
+## Build
 
 1. Clone the repository
 2. Run `npm install` to install node dependencies
 3. Run `npm run build` to build the extension
-4. Copy the `dist` folder into EXT
+4. Copy the `dist` directory into EXT
+
+## Development
+
+Run `npm run dev` to watch `src` and `public` directories and rebuild the
+project on changes
